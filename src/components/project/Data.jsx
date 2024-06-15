@@ -1,6 +1,7 @@
-import Portfolio from "../../media/Work/portfolio.jpg";
+import Basic from "../../media/Work/basic.jpg";
 import Boxhunt from "../../media/Work/boxhunt.jpg";
 import Camera from "../../media/Work/camera.jpg";
+import Portfolio from "../../media/Work/portfolio.jpg";
 import Ecommerce from "../../media/Work/ecommerce.jpg";
 import Expenses from "../../media/Work/expenses.jpg";
 import Information from "../../media/Work/information.jpg";
@@ -19,7 +20,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    image: Portfolio,
+    image: Basic,
     title: "Basic Portfolio",
     category: "react",
     demo: "https://vyshnavikamineni.github.io/portfolio/",
@@ -50,7 +51,15 @@ export const projectsData = [
     repo: "https://github.com/VyshnaviKamineni/expense-tracker"
   },
   {
-    id: 6,
+    id: 6.,
+    image: Portfolio,
+    title: " My Portfolio",
+    category: "react",
+    demo: "https://vyshnavikamineni.github.io/Vyshnavi-Portfolio/",
+    repo: "https://github.com/VyshnaviKamineni/Vyshnavi-Portfolio",
+  },
+  {
+    id: 7,
     image: Information,
     title: "Information Update",
     category: "react",
@@ -58,7 +67,7 @@ export const projectsData = [
     repo: "https://github.com/VyshnaviKamineni/before-and-after"
   },
   {
-    id: 7,
+    id: 8,
     image: Tabs,
     title: "Tab Implementation",
     category: "responsive",
@@ -66,7 +75,7 @@ export const projectsData = [
     repo: "https://github.com/VyshnaviKamineni/Tab-Implementation"
   },
   {
-    id: 8,
+    id: 9,
     image: Todo,
     title: "ToDo List",
     category: "react",
