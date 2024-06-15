@@ -1,0 +1,120 @@
+/* Contact.css */
+
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+.section__title {
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.section__subtitle {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact__info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contact__card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact__card-icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+.contact__card-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.9rem;
+}
+
+.contact__card-data {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.contact__button {
+    display: inline-flex;
+    align-items: center;
+    color: #007bff;
+    font-weight: 500;
+    margin-top:10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact__button:hover {
+    color: #0056b3;
+}
+
+.contact__button-icon {
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact__button:hover .contact__button-icon {
+    transform: translateX(5px);
+}
+#linkedin{
+    margin-top: 30px;
+}
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .contact__container {
+        padding: 1.5rem;
+    }
+
+    .contact__info {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .contact__card {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .contact__container {
+        padding: 1rem;
+    }
+
+    .contact__info {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact__card {
+        padding: 0.5rem;
+    }
+}
