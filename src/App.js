@@ -14,13 +14,13 @@ import Scrollup from './components/scrollup/Scrollup';
 function App() {
   return (
     <>
+    <Header/>
     <main className='main'>
-      <Header/>
       <Home/>
       <About/>
       <Skills/>
-      <Qualification/>
-      <Project/>
+      {/* <Qualification/> */}
+    <Project/>
       <Testimonials/>
       <Contact/>
     </main>

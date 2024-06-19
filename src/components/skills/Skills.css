@@ -1,4 +1,4 @@
-/* Skills.css */
+
 #skills {
     padding: 15px 5px;
     text-align: center;
@@ -94,4 +94,11 @@
 .skill-category frontend {
     background-color: blue;
 }
-  
+
+@media screen and (max-width: 480px) {
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className="footer__container container">
-            <h1 className="footer__title">Tirumala Sri Lakshmi Vyshnavi Devi Priya</h1>
+            <h1 className="footer__title">Tirumala Sri Lakshmi Vyshnavi Devi Priya Kamineni</h1>
 
             <ul className="footer__list">
                 <li>
@@ -22,7 +22,7 @@ const Footer = () => {
 
             </ul>
 
-            <div className="social-links">
+            <div className="footer__social">
 
         <a href="https://www.instagram.com/vyshnavi_ammuu/" className='footer__social-link' target="_blank" rel="noreferrer">
             <i class="bx bxl-instagram"></i>

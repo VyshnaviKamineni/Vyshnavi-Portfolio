@@ -1,136 +1,126 @@
 .about__container {
     display: flex;
-    align-items: left;
-    height: 80%;
-    width: 80vw;
-    justify-content: left;
-    margin-left: 247px ;
-    margin-right: 247px;
-}
-
-.section__title {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+  
+  .about__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section__title {
     color: rgba(0, 0, 0, 0.726);
-    font-size: 43px;
+    font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 10px;
-    margin-top: 70px;
-}
-
-.section__subtitle {
+    margin: 70px 0 10px;
+  }
+  
+  .section__subtitle {
     display: block;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 4rem;
-}
-
-#title{
+  }
+  
+  #title {
     font-size: 2.5rem;
-}
-
-#subtitle{
-    font-size: 20px;
+  }
+  
+  #subtitle {
+    font-size: 1.25rem;
     margin-bottom: 60px;
-}
-.about__img {
-    width: 360px;
-    height: 360px;
-    display: flex;
+  }
+  
+  .about__img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
     border: 1px solid black;
-    border-radius: 1.5rem; 
-    margin-left: 740px;
-    position: absolute;
-    margin-top: 7px;
-}
-
-.about__info {
-    grid-template-columns: repeat(3, 140px);
+    border-radius: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .about__description {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 17px;
+    max-width: 670px;
+    margin: 2rem 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+  
+  .about__info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 0.5rem;
     margin-bottom: 50px;
-}
-
-.grid {
-    grid-gap: 1.5rem;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+  
+  /* .grid {
     display: grid;
-    gap: 4.5rem;
-}
-
-.about__box {
-    background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0);
+    gap: 1.5rem;
+  } */
+  
+  .about__box {
+    background-color: rgba(223, 222, 222, 0.408);
     border-radius: 1.75rem;
     text-align: center;
     padding: 1rem 1.25rem;
-    width: 150px;
-    background-color: rgba(223, 222, 222, 0.408);
-}
-
-.about__description {
-        padding: 0 4rem 0 0;
-        text-align: left;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        unicode-bidi: isolate;
-        line-height: 1.5;
-        font-size: 17px;
-        max-width: 670px;
-        margin-top: 2px;
-        margin-bottom: 0.2px;
-}
-
-.about__icon {
+  }
+  
+  .about__icon {
     font-size: 1.8rem;
     color: var(--title-color);
-}
-
-.button__icon {
+  }
+  
+  .button__icon {
     margin-left: 7.5px;
-}
-/*=============== BREAKPOINTS ===============*/
-/* For large devices */
-@media screen and (max-width: 992px) {
+  }
+  
+  /* Media Queries for Responsive Design */
+  @media (min-width: 768px) {
     .about__container {
-        grid-template-columns: 1fr;
-        row-gap: 2.5rem;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0 2rem;
     }
-
+  
     .about__img {
-        width: 220px;
-        
+      width: 360px;
+      height: 360px;
+      margin-right: 2rem;
+      margin-top: 0;
+      order: 0;
     }
-    .about__box {
-        padding: 0.75rem 0.5rem;
-    }
-
-    .about__data {
-        text-align: center;
-    }
-
-    .about__info {
-        justify-content: center;
-    }
-
+  
     .about__description {
-        padding: 0 5rem;
-        margin-bottom: 2rem;
+      max-width: 670px;
+      margin-top: 0;
     }
-}
-
-/* For medium devices */
-@media screen and (max-width: 576px) {
+  
     .about__info {
-        grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
     }
-
-    .about__description {
-        padding: 0;
+  }
+  
+  @media (min-width: 1024px) {
+    .about__container {
+      padding: 0 4rem;
     }
-}
-
-/* For small devices */
-@media screen and (max-width: 350px) {
-    .about__info {
-        grid-template-columns: repeat(2, 1fr);
+  
+    .about__img {
+      margin-right: 4rem;
     }
-}
+  }

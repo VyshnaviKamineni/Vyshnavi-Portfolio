@@ -6,7 +6,7 @@ const Header = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const header = document.querySelector(".header");
+            const header = document.querySelector(".navbar");
             if (header) {
                 if (window.scrollY >= 80) {
                     header.classList.add("scroll-header");
@@ -17,7 +17,6 @@ const Header = () => {
         };
 
         window.addEventListener("scroll", handleScroll);
-
         // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener("scroll", handleScroll);
@@ -32,7 +31,7 @@ const Header = () => {
         <>
             <div className={`navbar ${isMenuOpen ? 'menuOpen' : ''}`} id='navbar'>
                 <div className="logo">
-                    <h1>Tirumala Sri Lakshmi Vyshnavi Devi Priya Kamineni</h1>
+                    <h1>Vyshnavi Kamineni</h1>
                 </div>
                 <div className="navlist">
                     <ul>
