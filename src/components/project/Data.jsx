@@ -7,6 +7,9 @@ import Expenses from "../../media/Work/expenses.jpg";
 import Information from "../../media/Work/information.jpg";
 import Tabs from "../../media/Work/tabs.jpg";
 import Todo from "../../media/Work/todo.png";
+import Weather from "../../media/Work/weather.png";
+import Login from "../../media/Work/login.jpg";
+
 
 
 export const projectsData = [
@@ -31,8 +34,8 @@ export const projectsData = [
     image: Camera,
     title: "Camera & Location Access",
     category: "responsive",
-    demo: "https://github.com/VyshnaviKamineni/Camera-Access",
-    repo: "https://vyshnavikamineni.github.io/Camera-Access/"
+    demo: "https://vyshnavikamineni.github.io/Camera-Access/",
+    repo: "https://github.com/VyshnaviKamineni/Camera-Access"
   },
   {
     id: 4,
@@ -82,6 +85,23 @@ export const projectsData = [
     demo: "https://vyshnavikamineni.github.io/todo-app/",
     repo: "https://github.com/VyshnaviKamineni/todo-app"
   },
+  {
+    id: 10,
+    image: Weather,
+    title: "Weather Dashboard",
+    category: "react",
+    demo: "https://vyshnavikamineni.github.io/weather_dashboard/",
+    repo: "https://github.com/VyshnaviKamineni/weather_dashboard" 
+  },
+  {
+    id: 11,
+    image: Login,
+    title: "Login System Redux",
+    category: "react",
+    demo: "https://vyshnavikamineni.github.io/Login_System/",
+    repo: "https://github.com/VyshnaviKamineni/Login_System"
+  }
+
 ];
 
 

@@ -24,7 +24,7 @@ const Footer = () => {
 
             <div className="footer__social">
 
-        <a href="https://www.instagram.com/vyshnavi_ammuu/" className='footer__social-link' target="_blank" rel="noreferrer">
+        <a href="https://www.instagram.com/vyshuu_vyshnavii/" className='footer__social-link' target="_blank" rel="noreferrer">
             <i class="bx bxl-instagram"></i>
         </a>
 
@@ -35,7 +35,7 @@ const Footer = () => {
         <a href="https://www.github.com/VyshnaviKamineni" className='footer__social-link' target="_blank" rel="noreferrer">
             <i class='bx bxl-github'></i>
         </a>
-       </div>
+       </div> 
 
        <p className="footer-text">© 2024 My Portfolio. All rights reserved. | Made by Vyshnavi</p>
        </div>
